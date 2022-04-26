@@ -10,7 +10,7 @@ export default function Support() {
 				<h1 className="text-2xl font-bold">Support</h1>
 				<FaHandsHelping className="text-3xl" />
 			</div>
-			<div className="grid grid-cols-2 pl-10 bg-gray-300 dark:bg-secondary py-10 rounded-md">
+			<div className="grid grid-cols-2 pl-10 dark:border-0 border-2 border-black dark:bg-secondary py-10 rounded-md">
 				<a
 					href="https://www.patreon.com/dailywebcoding"
 					target="_blank"

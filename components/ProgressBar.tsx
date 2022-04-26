@@ -24,7 +24,7 @@ export default function ProgressBar({ Icon, text, value }: ProgressBarProps) {
 			</div>
 			<div className="w-full rounded-full h-2.5 bg-gray-300 dark:bg-secondary">
 				<div
-					className=" bg-blue-300 dark:bg-blue-600 h-2.5 rounded-full"
+					className="bg-blue-900 dark:bg-blue-600 h-2.5 rounded-full"
 					style={{
 						width: value,
 					}}

@@ -5,7 +5,7 @@ import { ShowCardProp } from "../type";
 export default function ShowCaseCard({ showCase }: ShowCardProp) {
 	return (
 		<a href={showCase.link} target="_blank" rel="noreferrer">
-			<div className="w-80 bg-gray-300 dark:bg-secondary rounded-md">
+			<div className="w-80 border-2 dark:border-0 border-black dark:bg-secondary rounded-md">
 				<div className="w-80 h-40 relative rounded-t-md">
 					<Image
 						src={showCase.imageUrl}

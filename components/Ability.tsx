@@ -16,7 +16,7 @@ export default function Ability() {
 				<h2 className="pl-5 text-xl dark:text-gray-300 text-gray-700">
 					Coding
 				</h2>
-				<FaCode className="text-xl" />
+				<FaCode className="text-xl text-gray-800 dark:text-white" />
 			</div>
 			<div className="pl-10 pr-10">
 				<ProgressBar Icon={DiReact} text="React" value="90%" />
@@ -25,8 +25,10 @@ export default function Ability() {
 				<ProgressBar Icon={SiExpress} text="Express.js" value="85%" />
 			</div>
 			<div className="flex items-center gap-2 mt-10 mb-5">
-				<h2 className="pl-5 text-xl text-gray-300 text-gray-700">Language</h2>
-				<FaFlag className="text-xl" />
+				<h2 className="pl-5 text-xl dark:text-gray-300 text-gray-700">
+					Language
+				</h2>
+				<FaFlag className="text-xl text-gray-800 dark:text-white" />
 			</div>
 
 			<div className="pl-10 pr-10">
