@@ -43,7 +43,7 @@ export default function UserInfo() {
 					</div>
 					<div>
 						<p className="dark:text-gray-400 text-gray-700 text-sm">
-							Joined the world 23 years ago.
+							Joined the world 22 years ago.
 						</p>
 					</div>
 				</div>

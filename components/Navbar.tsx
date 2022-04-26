@@ -17,7 +17,9 @@ export default function Navbar() {
 			</div>
 			<div
 				className="flex items-center gap-2 cursor-pointer group"
-				onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+				onClick={() => {
+					setTheme(theme === "dark" ? "light" : "dark");
+				}}
 			>
 				<h1 className="uppercase group-hover:tracking-wide transition-all">
 					{theme === "dark" ? "light" : "dark"}
