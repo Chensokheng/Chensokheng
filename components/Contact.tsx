@@ -30,8 +30,8 @@ export default function Contact() {
 	return (
 		<div className="mt-20">
 			<div className="flex items-center gap-2 mb-10">
-				<h1 className="text-white text-2xl font-bold">Contact</h1>
-				<MdOutlineContactSupport className="text-white text-3xl" />
+				<h1 className="text-2xl font-bold">Contact</h1>
+				<MdOutlineContactSupport className="text-3xl" />
 			</div>
 			<div className="pl-10">
 				<div className="grid grid-cols-2 gap-5">
@@ -39,8 +39,10 @@ export default function Contact() {
 						return (
 							<a href={link} target="_blank" rel="noreferrer" key={index}>
 								<div className="flex items-center gap-3">
-									<Icon className="text-white text-2xl" />
-									<h1 className="text-gray-300  text-lg">{text}</h1>
+									<Icon className="text-2xl" />
+									<h1 className="dark:text-gray-300 text-gray-700  text-lg">
+										{text}
+									</h1>
 								</div>
 							</a>
 						);
