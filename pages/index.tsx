@@ -8,20 +8,24 @@ import Support from "../components/Support";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import dynamic from "next/dynamic";
+import HomeSeo from "../components/SEO/home";
 const Navbar = dynamic(() => import("../components/Navbar"), { ssr: false });
 const Home: NextPage = () => {
 	return (
-		<section className="bg-yellow-100 dark:bg-primary min-h-screen transition">
-			<main className="max-w-3xl mx-auto min-h-screen pt-10 px-5">
-				<Navbar />
-				<UserInfo />
-				<Ability />
-				<ShowCase />
-				<Contact />
-				<Support />
-				<Footer />
-			</main>
-		</section>
+		<>
+			<HomeSeo />
+			<section className="bg-yellow-100 dark:bg-primary min-h-screen transition">
+				<main className="max-w-3xl mx-auto min-h-screen pt-10 px-5">
+					<Navbar />
+					<UserInfo />
+					<Ability />
+					<ShowCase />
+					<Contact />
+					<Support />
+					<Footer />
+				</main>
+			</section>
+		</>
 	);
 };
 
