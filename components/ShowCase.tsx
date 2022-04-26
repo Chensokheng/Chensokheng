@@ -39,7 +39,7 @@ export default function ShowCase() {
 			imageUrl: "/showcase/covid-tracker.jpeg",
 			title: "Build covid-19 tracker UI with React and Tailwind and Chart.js.",
 			techStack: [SiReact, SiNetlify, SiTailwindcss, SiChartdotjs],
-			link: "https://github.com/Chensokheng/covid-19-tracker-ui",
+			link: "https://dailycovidtracking.netlify.app/",
 		},
 		{
 			imageUrl: "/showcase/meme.jpeg",
