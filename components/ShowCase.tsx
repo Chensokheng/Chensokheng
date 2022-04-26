@@ -58,10 +58,10 @@ export default function ShowCase() {
 	return (
 		<div className="mt-20">
 			<div className="flex items-center gap-2 mb-3">
-				<h1 className="text-white text-2xl font-bold">Showcase</h1>
-				<DiOpensource className="text-white text-4xl" /> 
+				<h1 className=" text-2xl font-bold">Showcase</h1>
+				<DiOpensource className="text-4xl" /> 
 			</div>
-			<p className="text-gray-300 mt-10">
+			<p className="dark:text-gray-300 text-gray-700 mt-10">
 				All of these are come from the project for my youtube video.
 			</p>
 
