@@ -19,10 +19,25 @@ export default function Ability() {
 				<FaCode className="text-xl text-gray-800 dark:text-white" />
 			</div>
 			<div className="pl-10 pr-10">
-				<ProgressBar Icon={DiReact} text="React" value="90%" />
-				<ProgressBar Icon={SiNextdotjs} text="Next.js" value="85%" />
-				<ProgressBar Icon={SiTsnode} text="Typescript" value="80%" />
-				<ProgressBar Icon={SiExpress} text="Express.js" value="85%" />
+				<ProgressBar Icon={DiReact} text="React" value="90%" width="w-90%" />
+				<ProgressBar
+					Icon={SiNextdotjs}
+					text="Next.js"
+					value="85%"
+					width="w-85%"
+				/>
+				<ProgressBar
+					Icon={SiTsnode}
+					text="Typescript"
+					value="80%"
+					width="w-80%"
+				/>
+				<ProgressBar
+					Icon={SiExpress}
+					text="Express.js"
+					value="85%"
+					width="w-85%"
+				/>
 			</div>
 			<div className="flex items-center gap-2 mt-10 mb-5">
 				<h2 className="pl-5 text-xl dark:text-gray-300 text-gray-700">
@@ -32,8 +47,12 @@ export default function Ability() {
 			</div>
 
 			<div className="pl-10 pr-10">
-				<ProgressBar text="English (Upper-Intermediate)" value="85%" />
-				<ProgressBar text="Khmer (mother tounge)" value="99%" />
+				<ProgressBar
+					text="English (Upper-Intermediate)"
+					value="85%"
+					width="w-85%"
+				/>
+				<ProgressBar text="Khmer (mother tounge)" value="99%" width="w-99%" />
 			</div>
 		</div>
 	);

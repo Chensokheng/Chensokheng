@@ -25,7 +25,7 @@ export default function UserInfo() {
 	];
 
 	return (
-		<div className="mt-20 mb-20 border-2 border-gray-800 dark:bg-secondary rounded-md p-5">
+		<div className="mt-20 mb-20 border-2 border-gray-800 dark:bg-secondary rounded-md p-5 transition">
 			<div className="flex items-center gap-5">
 				<Image
 					src="/profile-image.png"

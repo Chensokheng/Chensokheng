@@ -34,7 +34,7 @@ export default function Contact() {
 				<MdOutlineContactSupport className="text-3xl" />
 			</div>
 			<div className="pl-10">
-				<div className="grid grid-cols-2 gap-5">
+				<div className="grid grd-cols-1 sm:grid-cols-2 gap-5">
 					{listOfContact.map(({ Icon, link, text }, index) => {
 						return (
 							<a href={link} target="_blank" rel="noreferrer" key={index}>

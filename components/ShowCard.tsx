@@ -4,9 +4,14 @@ import { ShowCardProp } from "../type";
 
 export default function ShowCaseCard({ showCase }: ShowCardProp) {
 	return (
-		<a href={showCase.link} target="_blank" rel="noreferrer">
+		<a
+			href={showCase.link}
+			target="_blank"
+			rel="noreferrer"
+			className="mx-auto"
+		>
 			<div className="w-80 border-2 dark:border-0 border-black dark:bg-secondary rounded-md">
-				<div className="w-80 h-40 relative rounded-t-md">
+				<div className="w-full h-40 relative">
 					<Image
 						src={showCase.imageUrl}
 						alt="thumbnail"
