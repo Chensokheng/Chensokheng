@@ -41,8 +41,8 @@ module.exports = {
 			fuchsia: colors.fuchsia,
 			pink: colors.pink,
 			rose: colors.rose,
-			primary: "#36393E",
-			secondary: "#282B2F",
+			primary: "#1E2028",
+			secondary: "#2E303A",
 		}),
 		columns: {
 			auto: "auto",
@@ -112,6 +112,8 @@ module.exports = {
 		animation: {
 			none: "none",
 			spin: "spin 1s linear infinite",
+			"left-right-3s": "left-right 3s forwards",
+			"left-right-2s": "left-right 2s forwards",
 			ping: "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
 			pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
 			bounce: "bounce 1s infinite",
@@ -133,16 +135,20 @@ module.exports = {
 		backgroundColor: ({ theme }) => theme("colors"),
 		backgroundImage: {
 			none: "none",
-			"gradient-to-t": "linear-gradient(to top, var(--tw-gradient-stops))",
+			"gradient-to-t":
+				"linear-gradient(to top, var(--tw-gradient-stops))",
 			"gradient-to-tr":
 				"linear-gradient(to top right, var(--tw-gradient-stops))",
-			"gradient-to-r": "linear-gradient(to right, var(--tw-gradient-stops))",
+			"gradient-to-r":
+				"linear-gradient(to right, var(--tw-gradient-stops))",
 			"gradient-to-br":
 				"linear-gradient(to bottom right, var(--tw-gradient-stops))",
-			"gradient-to-b": "linear-gradient(to bottom, var(--tw-gradient-stops))",
+			"gradient-to-b":
+				"linear-gradient(to bottom, var(--tw-gradient-stops))",
 			"gradient-to-bl":
 				"linear-gradient(to bottom left, var(--tw-gradient-stops))",
-			"gradient-to-l": "linear-gradient(to left, var(--tw-gradient-stops))",
+			"gradient-to-l":
+				"linear-gradient(to left, var(--tw-gradient-stops))",
 			"gradient-to-tl":
 				"linear-gradient(to top left, var(--tw-gradient-stops))",
 		},
@@ -217,7 +223,8 @@ module.exports = {
 		},
 		boxShadow: {
 			sm: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
-			DEFAULT: "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+			DEFAULT:
+				"0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
 			md: "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
 			lg: "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
 			xl: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
@@ -287,10 +294,16 @@ module.exports = {
 		divideWidth: ({ theme }) => theme("borderWidth"),
 		dropShadow: {
 			sm: "0 1px 1px rgb(0 0 0 / 0.05)",
-			DEFAULT: ["0 1px 2px rgb(0 0 0 / 0.1)", "0 1px 1px rgb(0 0 0 / 0.06)"],
+			DEFAULT: [
+				"0 1px 2px rgb(0 0 0 / 0.1)",
+				"0 1px 1px rgb(0 0 0 / 0.06)",
+			],
 			md: ["0 4px 3px rgb(0 0 0 / 0.07)", "0 2px 2px rgb(0 0 0 / 0.06)"],
 			lg: ["0 10px 8px rgb(0 0 0 / 0.04)", "0 4px 3px rgb(0 0 0 / 0.1)"],
-			xl: ["0 20px 13px rgb(0 0 0 / 0.03)", "0 8px 5px rgb(0 0 0 / 0.08)"],
+			xl: [
+				"0 20px 13px rgb(0 0 0 / 0.03)",
+				"0 8px 5px rgb(0 0 0 / 0.08)",
+			],
 			"2xl": "0 25px 25px rgb(0 0 0 / 0.15)",
 			none: "0 0 #0000",
 		},
@@ -596,6 +609,14 @@ module.exports = {
 					animationTimingFunction: "cubic-bezier(0,0,0.2,1)",
 				},
 			},
+			"left-right": {
+				from: {
+					"clip-path": "inset(0 100% 0 0)",
+				},
+				to: {
+					"clip-path": "inset(0 0 0 0)",
+				},
+			},
 		},
 		letterSpacing: {
 			tighter: "-0.05em",
@@ -665,6 +686,7 @@ module.exports = {
 			screen: "100vh",
 			min: "min-content",
 			max: "max-content",
+			"80vh": "80vh",
 			fit: "fit-content",
 		},
 		minWidth: {
@@ -876,8 +898,7 @@ module.exports = {
 			all: "all",
 			DEFAULT:
 				"color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter",
-			colors:
-				"color, background-color, border-color, text-decoration-color, fill, stroke",
+			colors: "color, background-color, border-color, text-decoration-color, fill, stroke",
 			opacity: "opacity",
 			shadow: "box-shadow",
 			transform: "transform",
