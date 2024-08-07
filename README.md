@@ -1,8 +1,6 @@
 <h1 align="center">Hi 👋, I'm Chensokheng</h1>
 <h3 align="center">A passionate Fullstack developer from Cambodia</h3>
 
-- 📝 I regularly write articles on [https://www.dailywebcoding.xyz/](https://www.dailywebcoding.xyz/)
-
 - 💬 Ask me about **React, Next.js**
 
 - 📫 How to reach me **chensokheng6@gmail.com**
